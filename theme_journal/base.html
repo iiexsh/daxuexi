@@ -62,7 +62,13 @@
         <div class="container">
             {%- block content %}
                 <div class="col-md-3">{% include "toc.html" %}</div>
-                <div class="col-md-9" role="main">{% include "content.html" %}</div>
+                <div class="col-md-9" role="main">
+                  {% include "content.html" %}
+                  
+                  <p style="text-align:center;text-indent: 0em">
+                    <img src="img/wxfoot.jpg" style="width:100%; max-width:500px"/>
+                  </p>
+                </div>
             {%- endblock %}
         </div>
 
